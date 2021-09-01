@@ -1,0 +1,41 @@
+{
+    "name": "jascha030/wp-plugin-lib-sequoia-bridge",
+    "description": "Interoperability package between jascha030/wp-plugin-lib and jascha030/wp-sequoia",
+    "require": {
+        "jascha030/wp-plugin-lib": "^1.3",
+        "jascha030/wp-sequoia": "^1.0",
+        "jascha030/config-lib": "^1.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "friendsofphp/php-cs-fixer": "^3.1",
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jascha030\\WpPluginLibSequoiaBridge\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jascha030\\WpPluginLibSequoiaBridge\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jascha030",
+            "email": "contact@jaschavanaalst.nl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "scripts": {
+        "format": "./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --allow-risky=yes",
+        "phpunit": "./vendor/bin/phpunit"
+    }
+}
